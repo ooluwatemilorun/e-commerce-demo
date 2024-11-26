@@ -1,0 +1,131 @@
+
+/* slider styles */
+
+.slider{
+    /* background-color: #ddd; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    
+    height: inherit;
+    width: 100%;
+    margin: auto var(--boxMargin);
+    background-color: orange;
+    border-radius: var(--boxBradius);
+}
+.mainHeadline .story{
+    position:absolute;
+    width: 75%;
+    margin: auto;
+    color: darkblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.mainHeadline .story h1{
+    font-size: 3.5rem;
+    margin: 0.5rem;
+    -webkit-animation: anim8 .2s ease-in-out .5s;
+    animation: anim8 .2s ease-in-out .5s;
+}
+@keyframes anim8 {
+    0% {
+    opacity: 0;
+    -webkit-transform: scale(1) translateY(-2rem);
+    transform: scale(1) translateY(-2rem);
+    }
+    20% {
+    opacity: 1;
+    }
+    89% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    }
+    100% {
+    opacity: 0;
+    -webkit-transform: translateY(1rem);
+    transform: translateY(1rem);
+    }
+}
+.mainHeadline .story p{
+    margin: 0.5rem;
+    font-size: 2rem;
+}
+/* .slideshow-container img{
+        height: 80vh;
+        width: 100%;
+    } */
+
+/* The dots/bullets/indicators */
+.dot {
+    height: 1rem;
+    width: 1rem;
+    margin: .5rem;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    -webkit-transition: background-color 0.6s ease;
+    transition: background-color 0.6s ease;
+} 
+/* Slideshow container */
+.slideshow-container {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.three-dots{
+    position: absolute;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.mySlides{
+    background-attachment:fixed;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    width: 100%;
+}
+.mySlides.one{
+    background-color: red;
+    background-image: url(images/pexels-ono-kosuki-5999876.jpg);
+}
+.mySlides.two{
+    background-color: orange;
+    background-image: url(images/pexels-anna-shvets-5324975.jpg);
+}
+.mySlides.three{
+    background-color: yellow;
+    background-image: url(images/pexels-lukas-669619.jpg);
+}
+.active {
+background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+-webkit-animation-name: fade;
+-webkit-animation-duration: 5s;
+animation-name: fade;
+animation-duration: 5s ease-in ;
+}
+
+@-webkit-keyframes fade {
+from {opacity: .4} 
+to {opacity: .7}
+}
+
+@keyframes fade {
+from {opacity: .4} 
+to {opacity: .7}
+}
+  

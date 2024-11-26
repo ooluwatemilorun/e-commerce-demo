@@ -1,0 +1,121 @@
+.browserupgrade { display: block;
+    font-size: 24px;
+    color: red;
+    background-color: yellow; }
+
+/* IE 11 */
+:-ms-fullscreen, :root .browserupgrade { display: none; }
+
+/* Opera Mini 8 */
+:-o-prefocus, .browserupgrade { display: none; }
+
+/* all modern browsers */
+@supports (display: grid) { .browserupgrade { 
+    display: none;
+    } }
+*{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+body{
+    width:var(--containerStretch);
+    margin: 0;
+    padding: 0;
+    background-color: #eee;
+    font-size: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: stretch;
+                    overflow-x: hidden; /*    hides the translated nav links    */
+}
+.topGif {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    height: 8vh;
+    width: var(--containerWidth);
+    background-color: #fff;
+    margin: auto;
+}
+.content{
+    order: 3;
+    width: var(--containerStretch);
+    margin: 0 0 var(--boxMargin) 0;
+    background-color: #fff;
+}
+.content .wrapper{
+    width: var(--fullWidth);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: var(--boxPadding);
+    background-color: #fff;
+    border-radius: var(--boxBradius);
+}
+.content .smallAd{
+    width: 10rem;
+    height: 5rem;
+    background-color: burlywood;
+    border-radius: var(--boxBradius);
+}
+.content h2{
+    font-size: 2rem;
+    color: rgb(221, 93, 7);
+}
+.content form{
+    width: 60%;
+    height: 5rem;
+}
+.content input[type=text]{
+    width: VAR(--fullWidth);
+    height: 3rem;
+    border: 0;
+    padding: var(--boxPadding);
+    box-shadow: var(--buttonShadow);
+    border-radius: var(--cardBradius);
+    -webkit-border-radius: var(--cardBradius);
+    -moz-border-radius: var(--cardBradius);
+    -ms-border-radius: var(--cardBradius);
+    -o-border-radius: var(--cardBradius);
+}
+.content .links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10rem;
+    width: 70%;
+    padding: calc(2 * vaar(--cardMargin) 0);
+}
+.content .links div{
+    height: 5rem;
+    width: 5rem;
+    background-color: burlywood;
+}
+.content .largeAd{
+    height: 10rem;
+    width: 70%;
+    margin: auto;
+    background-color: peachpuff;
+    border-radius: var(--boxBradius);
+    -webkit-border-radius: var(--boxBradius);
+    -moz-border-radius: var(--boxBradius);
+    -ms-border-radius: var(--boxBradius);
+    -o-border-radius: var(--boxBradius);
+}
+.footer{
+            order: 4;
+    width: var(--containerStretch);
+    margin: 0;
+    padding: 0;
+}
